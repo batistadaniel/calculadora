@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Calculadora</h1>
+    <label for="sum1">Primeiro numero:</label>
+    <input type="text" id="sum1"> <br>
+
+    <label for="sum2">Segundo numero:</label>
+    <input type="text" id="sum2"> <br>
+
+    <div id="res">O resultado e: </div>
+
+    <input type="button" value="Somar" onclick="adicao()">
+    <input type="button" value="Subtrair" onclick="subtracao()">
+    <input type="button" value="Multiplicar" onclick="multiplicacao()">
+    <input type="button" value="Dividir" onclick="divisao()">
+
+    <script>
+        function adicao() {
+            var n1 = document.getElementById("sum1").value;
+            var n2 = document.getElementById("sum2").value;
+    
+            var numero1 = Number(n1);
+            var numero2 = Number(n2);
+            var resultado = numero1 + numero2;
+    
+            return res.innerHTML = `O resultado e: ${resultado.toFixed(2)}`;
+        }
+
+        function subtracao() {
+            var n1 = document.getElementById("sum1").value;
+            var n2 = document.getElementById("sum2").value;
+    
+            var numero1 = Number(n1);
+            var numero2 = Number(n2);
+            var resultado = numero1 - numero2;
+    
+            return res.innerHTML = `O resultado e: ${resultado.toFixed(2)}`;
+        }
+
+        function multiplicacao() {
+            var n1 = document.getElementById("sum1").value;
+            var n2 = document.getElementById("sum2").value;
+    
+            var numero1 = Number(n1);
+            var numero2 = Number(n2);
+            var resultado = numero1 * numero2;
+    
+            return res.innerHTML = `O resultado e: ${resultado.toFixed(2)}`;
+        }
+
+        function divisao() {
+            var n1 = document.getElementById("sum1").value;
+            var n2 = document.getElementById("sum2").value;
+    
+            var numero1 = Number(n1);
+            var numero2 = Number(n2);
+            var resultado = numero1 / numero2;
+    
+            return res.innerHTML = `O resultado e: ${resultado.toFixed(2)}`;
+        }
+    </script>
+</body>
+</html>
